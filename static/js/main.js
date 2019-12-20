@@ -29,13 +29,13 @@ $(document).ready(function() {
     //paralax
 
 
-    var scene = document.getElementById('scene');
+    // var scene = document.getElementById('scene');
 
 
-    if (scene != null) {
+    // if (scene != null) {
 
-        var parallaxInstance = new Parallax(scene);
-    }
+    //     var parallaxInstance = new Parallax(scene);
+    // }
 
 
 

@@ -7,10 +7,10 @@
 	<link rel="stylesheet" href="static/css/normalize.css">
 	<link rel="stylesheet" href="static/css/style.css">
 	<link rel="stylesheet" href="static/css/animate.css">
-	<script type="text/javascript" src="static/js/jQuery.js"></script>
-	<script type="text/javascript" src="static/js/lazy.js"></script>
-  	<script src="static/js/wow.min.js"></script>
-  	<script type="text/javascript" src="static/js/main.js" async></script>
+	
+	
+  	
+  	
   	<link rel="stylesheet" href="static/slick/slick.css">
   	<link rel="stylesheet" href="static/slick/slick-theme.css">
   	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -1938,13 +1938,60 @@ viewBox="0 0 500 500"
 	    </footer>
 
 
+      <script type="text/javascript" src="static/js/jQuery.js"></script>
+      <script type="text/javascript" src="static/js/lazy.js"></script>
+      <script src="static/js/wow.min.js"></script>
+ 
+
 
 	    <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
 	    
 	    <script src="static/slick/slick.min.js"></script>
 	    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	    <script src="static/js/jquery.maskedinput.min.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	   <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+
+    <script defer type="text/javascript">
+
+      function add(){ 
+      if (screen.width > 930) {
+          
+        document.write('<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" ></sc' + 'ript>');
+
+        
+
+      }
+       
+       } 
+       add();
+      
+    </script>
+
+
+
+
+
+
+    <!-- <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script> -->
+    <script defer type="text/javascript">
+      function disp(){ 
+        var scene = document.getElementById('scene');
+        if (scene != null && screen.width > 930) {
+          console.log('hello');
+          
+            var parallaxInstance = new Parallax(scene);
+        }
+      
+      } 
+        
+      // Calling add() function 
+      disp()
+    </script>
+
+
+
+
+           <script type="text/javascript" src="static/js/main.js" async></script>
 </body>
 </html>
 
